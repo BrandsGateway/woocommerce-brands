@@ -6,5 +6,4 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Automattic\\WooCommerce\\Grow\\Tools\\CompatChecker\\v0_0_1\\' => array($vendorDir . '/woocommerce/grow/src'),
 );
