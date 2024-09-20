@@ -8,12 +8,12 @@
  * Developer: WooCommerce
  * Developer URI: http://woocommerce.com/
  * Requires at least: 5.4
- * Tested up to: 6.5
- * Version: 1.7.2
+ * Tested up to: 6.6
+ * Version: 1.7.6
  * Text Domain: woocommerce-brands
  * Domain Path: /languages/
  * Requires Plugins: woocommerce
- * WC tested up to: 9.0
+ * WC tested up to: 9.3
  * WC requires at least: 6.0
  *
  * Copyright (c) 2020 WooCommerce
@@ -58,7 +58,7 @@ add_filter( 'woocommerce_translations_updates_for_woocommerce-brands', '__return
 // HPOS and new product editor compatibility declaration.
 add_action(
 	'before_woocommerce_init',
-	function() {
+	function () {
 		if ( class_exists( FeaturesUtil::class ) ) {
 			FeaturesUtil::declare_compatibility( 'custom_order_tables', plugin_basename( __FILE__ ) );
 			FeaturesUtil::declare_compatibility( 'product_block_editor', plugin_basename( __FILE__ ) );
@@ -70,10 +70,10 @@ add_action(
  * Initialize plugin.
  */
 function wc_brands_init() {
-	define( 'WC_BRANDS_VERSION', '1.7.2' ); // WRCS: DEFINED_VERSION.
+	define( 'WC_BRANDS_VERSION', '1.7.6' ); // WRCS: DEFINED_VERSION.
 
 	// Run compatibility checker checks and bail if not compatible.
-	if ( ! Checker::instance()->is_compatible( __FILE__, WC_BRANDS_VERSION ) ) {
+	if ( class_exists('Checker') && ! Checker::instance()->is_compatible( __FILE__, WC_BRANDS_VERSION ) ) {
 		return;
 	}
 
@@ -144,26 +144,30 @@ function wc_brands_activate() {
 if ( ! function_exists( 'wc_brands_on_block_template_register' ) ) {
 	/**
 	 * Add a new block to the template.
+	 *
+	 * @param string                 $template_id Template ID.
+	 * @param string                 $template_area Template area.
+	 * @param BlockTemplateInterface $template Template instance.
 	 */
-	function wc_brands_on_block_template_register( BlockTemplateInterface $template ) {
+	function wc_brands_on_block_template_register( string $template_id, string $template_area, BlockTemplateInterface $template ) {
 		if ( $template instanceof ProductFormTemplateInterface && 'simple-product' === $template->get_id() ) {
 			$section = $template->get_section_by_id( 'product-catalog-section' );
 			if ( $section !== null ) {
 				$section->add_block(
-					[
+					array(
 						'id'         => 'woocommerce-brands-select',
 						'blockName'  => 'woocommerce/product-taxonomy-field',
 						'order'      => 15,
-						'attributes' => [
+						'attributes' => array(
 							'label'       => __( 'Brands', 'woocommerce-brands' ),
 							'createTitle' => __( 'Create new brand', 'woocommerce-brands' ),
 							'slug'        => 'product_brand',
 							'property'    => 'brands',
-						],
-					]
+						),
+					)
 				);
 			}
 		}
 	}
-	add_action( 'woocommerce_block_template_register', 'wc_brands_on_block_template_register' );
+	add_action( 'woocommerce_layout_template_after_instantiation', 'wc_brands_on_block_template_register', 10, 3 );
 }

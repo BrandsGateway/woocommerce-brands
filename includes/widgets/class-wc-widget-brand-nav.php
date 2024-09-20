@@ -318,12 +318,13 @@ class WC_Widget_Brand_Nav extends WC_Widget {
 			}
 
 			if ( 0 == $depth ) {
+				$link = $this->get_page_base_url( $taxonomy );
 				echo '</select>';
 
 				wc_enqueue_js( "
 					jQuery( '.wc-brand-dropdown-layered-nav-". esc_js( $taxonomy ) . "' ).change( function() {
 						var slug = jQuery( this ).val();
-						location.href = '" . preg_replace( '%\/page\/[0-9]+%', '', str_replace( array( '&amp;', '%2C' ), array( '&', ',' ), esc_js( add_query_arg( 'filtering', '1', remove_query_arg( array( 'page', 'filter_' . $taxonomy ) ) ) ) ) ) . "&filter_". esc_js( $taxonomy ) . "=' + jQuery( '.wc-brand-dropdown-layered-nav-" . esc_js( $taxonomy ) . "' ).val();
+						location.href = '" . preg_replace( '%\/page\/[0-9]+%', '', str_replace( array( '&amp;', '%2C' ), array( '&', ',' ), esc_js( add_query_arg( 'filtering', '1', $link ) ) ) ) . '&filter_' . esc_js( $taxonomy ) . "=' + jQuery( '.wc-brand-dropdown-layered-nav-" . esc_js( $taxonomy ) . "' ).val();
 					});
 				" );
 			}

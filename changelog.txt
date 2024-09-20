@@ -1,5 +1,20 @@
 *** Brands Changelog ***
 
+2024-09-12 - version 1.7.6
+* Tweak - WC 9.3 compatibility.
+
+2024-08-13 - version 1.7.5
+* Tweak - WC 9.2 compatibility.
+
+2024-07-09 - version 1.7.4
+* Tweak - WC 9.1 compatibility.
+* Tweak - WP 6.6 compatibility.
+
+2024-07-02 - version 1.7.3
+* Fix - Deprecation message for woocommerce_block_template_register.
+* Fix - REST API with WooCommerce 9.0+.
+* Fix - Unwanted tracking parameters on Brands layered nav dropdown widget URLs.
+
 2024-06-13 - version 1.7.2
 * Tweak - WC 9.0 compatibility.
 

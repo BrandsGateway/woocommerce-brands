@@ -15,6 +15,7 @@ docker-compose -f $(wp-env install-path)/docker-compose.yml run --rm -u www-data
 && wp plugin install https://github.com/WP-API/Basic-Auth/archive/master.zip --activate \
 && wp plugin install wp-mail-logging --activate \
 && wp plugin install wordpress-importer --activate \
+&& wp plugin activate woocommerce-brands \
 && wp plugin install https://github.com/woocommerce/woocommerce-reset/archive/refs/heads/trunk.zip --activate \
 && wp rewrite structure '/%postname%/' --hard \
 && wp user create customer customer@woocommercecoree2etestsuite.com \
