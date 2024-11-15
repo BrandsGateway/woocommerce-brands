@@ -73,7 +73,9 @@ function wc_brands_init() {
 	define( 'WC_BRANDS_VERSION', '1.7.7' ); // WRCS: DEFINED_VERSION.
 
 	// Run compatibility checker checks and bail if not compatible.
-	if ( ! Checker::instance()->is_compatible( __FILE__, WC_BRANDS_VERSION ) ) {
+    //[PLUGIN CHANGE START]
+	if ( class_exists('Checker') && ! Checker::instance()->is_compatible( __FILE__, WC_BRANDS_VERSION ) ) {
+    //[PLUGIN CHANGE END]
 		return;
 	}
 

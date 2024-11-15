@@ -4,7 +4,11 @@
 
 ## Changelog
 
-
+- 2024-11-15 - version 1.7.7-patch1
+  - `web/app/plugins/woocommerce-brands/woocommerce-brands.php:77`
+    - Fix - Add class_exists for compatibility checker (Effectively disabling compatibility checker).
+  - `web/app/plugins/woocommerce-brands/includes/class-wc-brands-admin.php:10`
+    - Fix - PHP Deprecated: Creation of dynamic property `$settings`.
 
 ## Development
 
