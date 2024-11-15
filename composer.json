@@ -1,0 +1,14 @@
+{
+  "name": "digitalnodecom/woocommerce-brands",
+  "description": "Create, assign and list brands for products, and allow customers to view by brand.\n",
+  "version": "1.7.7",
+  "keywords": ["wordpress", "plugin"],
+  "homepage": "https://github.com/BrandsGateway/woocommerce-brands",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "BrandsGateway",
+      "email": "support@brandsgateway.com"
+    }
+  ]
+}

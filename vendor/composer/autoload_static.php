@@ -4,22 +4,8 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite55d8acce5bc795d88b4d56d297c08d3
+class ComposerStaticInit7563fc94369094156bd2e11dce0ee136
 {
-    public static $prefixLengthsPsr4 = array (
-        'A' => 
-        array (
-            'Automattic\\WooCommerce\\Grow\\Tools\\CompatChecker\\v0_0_1\\' => 55,
-        ),
-    );
-
-    public static $prefixDirsPsr4 = array (
-        'Automattic\\WooCommerce\\Grow\\Tools\\CompatChecker\\v0_0_1\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/woocommerce/grow/src',
-        ),
-    );
-
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
@@ -27,9 +13,7 @@ class ComposerStaticInite55d8acce5bc795d88b4d56d297c08d3
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite55d8acce5bc795d88b4d56d297c08d3::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite55d8acce5bc795d88b4d56d297c08d3::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInite55d8acce5bc795d88b4d56d297c08d3::$classMap;
+            $loader->classMap = ComposerStaticInit7563fc94369094156bd2e11dce0ee136::$classMap;
 
         }, null, ClassLoader::class);
     }
