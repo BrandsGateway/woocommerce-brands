@@ -4,6 +4,9 @@
 
 ## Changelog
 
+- 2024-11-15 - version 1.7.7-patch2
+  - `web/app/plugins/woocommerce-brands/composer.json`
+    - Fix - Remove version from composer.json
 - 2024-11-15 - version 1.7.7-patch1
   - `web/app/plugins/woocommerce-brands/woocommerce-brands.php:77`
     - Fix - Add class_exists for compatibility checker (Effectively disabling compatibility checker).
