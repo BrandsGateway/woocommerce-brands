@@ -1,0 +1,416 @@
+# Copyright (C) 2024 WooCommerce
+# This file is distributed under the same license as the WooCommerce Brands package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Brands 1.7.7\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/woocommerce-brands\n"
+"POT-Creation-Date: 2024-11-07 14:48:39+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: node-wp-i18n 1.2.7\n"
+
+#: includes/class-wc-brands-admin.php:36 includes/class-wc-brands-admin.php:597
+#: includes/class-wc-brands-admin.php:608 includes/class-wc-brands.php:271
+#: includes/class-wc-brands.php:273
+#: includes/widgets/class-wc-widget-brand-nav.php:150
+#: woocommerce-brands.php:162
+msgid "Brands"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:109
+msgid "Product brands"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:110
+msgid "Any brand"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:119
+msgid ""
+"A product must be associated with this brand for the coupon to remain valid "
+"or, for \"Product Discounts\", products with these brands will be "
+"discounted."
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:124
+msgid "Exclude brands"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:125
+msgid "No brands"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:134
+msgid ""
+"Product must not be associated with these brands for the coupon to remain "
+"valid or, for \"Product Discounts\", products associated with these brands "
+"will not be discounted."
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:163
+msgid "Brands Archives"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:166
+msgid "Show description"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:167
+msgid ""
+"Choose to show the brand description on the archive page. Turn this off if "
+"you intend to use the description widget instead. Please note: this is only "
+"for themes that do not show the description."
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:248
+#: includes/class-wc-brands-admin.php:331
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:252
+#: includes/class-wc-brands-admin.php:336
+msgid "Upload/Add image"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:253
+#: includes/class-wc-brands-admin.php:337
+msgid "Remove image"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:278
+#: includes/class-wc-brands-admin.php:362
+msgid "Choose an image"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:280
+#: includes/class-wc-brands-admin.php:364
+msgid "Use image"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:407
+msgid ""
+"Brands be added and managed from this screen. You can optionally upload a "
+"brand image to display in brand widgets and on brand archives"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:456
+msgid "Image"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:507
+#: includes/class-wc-brands-admin.php:521
+msgid "Filter by brand"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:542
+msgid "Product brand base"
+msgstr ""
+
+#: includes/class-wc-brands-block-template-utils-duplicated.php:126
+msgid "No theme is defined for this template."
+msgstr ""
+
+#: includes/class-wc-brands-block-template-utils-duplicated.php:239
+msgid "Single Product"
+msgstr ""
+
+#: includes/class-wc-brands-block-template-utils-duplicated.php:241
+msgid "Product Archive"
+msgstr ""
+
+#: includes/class-wc-brands-block-template-utils-duplicated.php:243
+msgid "Product Category"
+msgstr ""
+
+#: includes/class-wc-brands-block-template-utils-duplicated.php:245
+msgid "Product Tag"
+msgstr ""
+
+#: includes/class-wc-brands-coupons.php:129
+msgid "Sorry, this coupon is not applicable to the brands of selected products."
+msgstr ""
+
+#: includes/class-wc-brands.php:150
+#. translators: %s: WooCommerce link
+msgid ""
+"Full Site Editor themes require %s >= 6.1 for full compatibility with "
+"WooCommerce Brands."
+msgstr ""
+
+#: includes/class-wc-brands.php:253 includes/class-wc-brands.php:260
+msgid "brand"
+msgstr ""
+
+#: includes/class-wc-brands.php:274
+msgid "Brand"
+msgstr ""
+
+#: includes/class-wc-brands.php:275
+msgid "Search Brands"
+msgstr ""
+
+#: includes/class-wc-brands.php:276
+msgid "All Brands"
+msgstr ""
+
+#: includes/class-wc-brands.php:277
+msgid "Parent Brand"
+msgstr ""
+
+#: includes/class-wc-brands.php:278
+msgid "Parent Brand:"
+msgstr ""
+
+#: includes/class-wc-brands.php:279
+msgid "Edit Brand"
+msgstr ""
+
+#: includes/class-wc-brands.php:280
+msgid "Update Brand"
+msgstr ""
+
+#: includes/class-wc-brands.php:281
+msgid "Add New Brand"
+msgstr ""
+
+#: includes/class-wc-brands.php:282
+msgid "New Brand Name"
+msgstr ""
+
+#: includes/class-wc-brands.php:283
+msgid "No Brands Found"
+msgstr ""
+
+#: includes/class-wc-brands.php:284
+msgid "&larr; Go to Brands"
+msgstr ""
+
+#: includes/class-wc-brands.php:422
+#. translators: %s - Label name
+msgid "%s: "
+msgid_plural "%s: "
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-wc-brands.php:954
+msgid "Limit result set to products assigned a specific brand ID."
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-description.php:23
+msgid "WooCommerce Brand Description"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-description.php:24
+msgid "When viewing a brand archive, show the current brands description."
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-description.php:82
+#: includes/widgets/class-wc-widget-brand-nav.php:172
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:144
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-nav.php:19
+msgid ""
+"Shows brands in a widget which lets you narrow down the list of products "
+"when viewing products."
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-nav.php:21
+msgid "WooCommerce Brand Layered Nav"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-nav.php:175
+msgid "Display Type:"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-nav.php:177
+msgid "List"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-nav.php:178
+msgid "Dropdown"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-nav.php:286
+msgid "Any Brand"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:23
+msgid "WooCommerce Brand Thumbnails"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:24
+msgid "Show a grid of brand thumbnails."
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:149
+msgid "Columns:"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:154
+msgid "Fluid columns:"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:159
+msgid "Number:"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:160
+msgid "All"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:164
+msgid "Exclude:"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:165
+msgid "None"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:169
+msgid "Hide empty brands:"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:171
+msgid "Yes"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:172
+msgid "No"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:177
+msgid "Order by:"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:179
+msgid "Name"
+msgstr ""
+
+#: includes/widgets/class-wc-widget-brand-thumbnails.php:180
+msgid "Count"
+msgstr ""
+
+#: templates/shortcodes/brands-a-z.php:39
+msgid "&uarr; Top"
+msgstr ""
+
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:105
+msgid "WooCommerce is not installed or activated."
+msgstr ""
+
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:119
+msgid "WooCommerce version not compatible."
+msgstr ""
+
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:262
+#. translators: %1$s - Plugin Name, %2$s - activate WooCommerce link open, %3$s
+#. - activate WooCommerce link close.
+msgid ""
+"%1$s requires WooCommerce to be activated. Please %2$sactivate "
+"WooCommerce%3$s."
+msgstr ""
+
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:280
+#. translators: %1$s - Plugin Name, %2$s - install WooCommerce link open, %3$s
+#. - install WooCommerce link close.
+msgid ""
+"%1$s requires WooCommerce to be installed and activated. Please %2$sinstall "
+"WooCommerce%3$s."
+msgstr ""
+
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:307
+#. translators: %1$s - Plugin Name, %2$s - minimum WooCommerce version, %3$s -
+#. update WooCommerce link open, %4$s - update WooCommerce link close, %5$s -
+#. download minimum WooCommerce link open, %6$s - download minimum WooCommerce
+#. link close.
+msgid ""
+"%1$s requires WooCommerce version %2$s or higher. Please %3$supdate "
+"WooCommerce%4$s to the latest version, or %5$sdownload the minimum required "
+"version &raquo;%6$s"
+msgstr ""
+
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:333
+#. translators: %1$s - Plugin Name, %2$s - Plugin version, %3$s - WooCommerce
+#. version number
+msgid "%1$s - version %2$s is untested with WooCommerce %3$s."
+msgstr ""
+
+#: vendor/woocommerce/grow/src/Checks/WCCompatibility.php:360
+#. translators: Placeholders: %1$s - plugin name, %2$s - WooCommerce version
+#. number, %3$s - opening <a> HTML link tag, %4$s - closing </a> HTML link tag
+msgid ""
+"Heads up! %1$s will soon discontinue support for WooCommerce %2$s. Please "
+"%3$supdate WooCommerce%4$s to take advantage of the latest updates and "
+"features."
+msgstr ""
+
+#: vendor/woocommerce/grow/src/Checks/WPCompatibility.php:39
+#. translators: %1$s - Plugin Name, %2$s - Plugin version, %3$s - WordPress
+#. version number
+msgid "%1$s - %2$s is untested with WordPress %3$s."
+msgstr ""
+
+#: woocommerce-brands.php:108
+msgid "Docs"
+msgstr ""
+
+#: woocommerce-brands.php:111
+msgid "Support"
+msgstr ""
+
+#: woocommerce-brands.php:114
+msgid "Changelog"
+msgstr ""
+
+#: woocommerce-brands.php:125
+#. translators: %s: WooCommerce link
+msgid "WooCommerce Brands requires %s to be installed and active."
+msgstr ""
+
+#: woocommerce-brands.php:163
+msgid "Create new brand"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Brands"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://woocommerce.com/products/brands/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Add brands to your products, as well as widgets and shortcodes for "
+"displaying your brands."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WooCommerce"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://woocommerce.com/"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:557
+msgctxt "slug"
+msgid "brand"
+msgstr ""
+
+#: includes/class-wc-brands-admin.php:584
+msgctxt "slug"
+msgid "product"
+msgstr ""
+
+#: includes/class-wc-brands.php:202
+msgctxt "slug"
+msgid "uncategorized"
+msgstr ""
