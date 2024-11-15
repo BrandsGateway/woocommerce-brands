@@ -6,6 +6,9 @@
 class WC_Brands_Admin {
 
 	var $settings_tabs;
+    //[PLUGIN CHANGE START]
+    var $settings;
+    //[PLUGIN CHANGE END]
 	var $fields = array();
 
 	/**

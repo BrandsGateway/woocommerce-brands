@@ -1,5 +1,9 @@
 *** Brands Changelog ***
 
+2024-11-07 - version 1.7.7
+* Tweak - WC 9.4 compatibility.
+* Tweak - WP 6.7 compatibility.
+
 2024-09-12 - version 1.7.6
 * Tweak - WC 9.3 compatibility.
 

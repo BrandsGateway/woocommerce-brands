@@ -8,12 +8,12 @@
  * Developer: WooCommerce
  * Developer URI: http://woocommerce.com/
  * Requires at least: 5.4
- * Tested up to: 6.6
- * Version: 1.7.6
+ * Tested up to: 6.7
+ * Version: 1.7.7
  * Text Domain: woocommerce-brands
  * Domain Path: /languages/
  * Requires Plugins: woocommerce
- * WC tested up to: 9.3
+ * WC tested up to: 9.4
  * WC requires at least: 6.0
  *
  * Copyright (c) 2020 WooCommerce
@@ -70,10 +70,12 @@ add_action(
  * Initialize plugin.
  */
 function wc_brands_init() {
-	define( 'WC_BRANDS_VERSION', '1.7.6' ); // WRCS: DEFINED_VERSION.
+	define( 'WC_BRANDS_VERSION', '1.7.7' ); // WRCS: DEFINED_VERSION.
 
 	// Run compatibility checker checks and bail if not compatible.
+    //[PLUGIN CHANGE START]
 	if ( class_exists('Checker') && ! Checker::instance()->is_compatible( __FILE__, WC_BRANDS_VERSION ) ) {
+    //[PLUGIN CHANGE END]
 		return;
 	}
 
