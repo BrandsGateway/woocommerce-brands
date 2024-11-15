@@ -60,7 +60,6 @@ composer install --optimize-autoloader --no-dev &> /dev/null
 
 # Store the original state of .gitignore
 cp .gitignore .gitignore_backup
-sed -i '' -e 's#public/\*\*#!public/\*\*#g' .gitignore
 sed -i '' -e 's#vendor#!vendor#g' .gitignore
 
 echo -e ${GREEN}"Adding composer vendor folder to the Git repository for the release ${NC}"
@@ -77,7 +76,6 @@ git push --quiet -u --no-progress origin $PLUGIN_VERSION
 # Restore the original .gitignore
 echo -e ${GREEN}"Removing previously added Git ignored files from the repository ${NC}"
 mv .gitignore_backup .gitignore
-git rm -r --cached public/** &> /dev/null
 git rm -r --cached vendor &> /dev/null
 git add .
 git commit -m "Removed previously added Git ignored files from the repository for the plugin release version: $PLUGIN_VERSION" &> /dev/null
