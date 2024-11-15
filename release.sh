@@ -77,7 +77,6 @@ git push --quiet -u --no-progress origin $PLUGIN_VERSION
 # Restore the original .gitignore
 echo -e ${GREEN}"Removing previously added Git ignored files from the repository ${NC}"
 mv .gitignore_backup .gitignore
-git rm -r --cached public/** &> /dev/null
 git rm -r --cached vendor &> /dev/null
 git add .
 git commit -m "Removed previously added Git ignored files from the repository for the plugin release version: $PLUGIN_VERSION" &> /dev/null
