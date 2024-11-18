@@ -4,6 +4,8 @@
 
 ## Changelog
 
+- 2024-11-18 - unreleased
+  - Include `vendor` folder to git. Plugin is now 'plug and play'.
 - 2024-11-15 - version 1.7.7-patch2
   - `web/app/plugins/woocommerce-brands/composer.json`
     - Fix - Remove version from composer.json
